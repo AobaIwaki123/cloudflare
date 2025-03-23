@@ -4,8 +4,8 @@
 # Quick Start
 
 ```sh
-$ make init
-$ make create-cloudflare-tunnel
+$ mkdir -p conf/prod
+$ docker compose run --rm cloudflare tunnel login
 $ docker compose run --rm cloudflare tunnel create <tunnel-name>
 $ docker compose run --rm cloudflare tunnel route dns <tunnel-name> <hostname(example.hoge.net)>
 ```
